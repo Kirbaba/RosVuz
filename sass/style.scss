@@ -1,0 +1,213 @@
+@import "_mixins";
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    margin: 0 auto;
+	position: relative;
+	&:before,
+	&:after{		
+		display: table;
+  		content: " ";
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+a {
+	text-decoration: none;
+} 
+
+.application {
+	display: inline-block;
+	position: relative;
+	height: 160px;
+	width: 100%;
+	background-image: url("../img/appbg.png");
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+	&__but {
+		display: block;
+		width: 660px;
+		position: relative;
+		margin: 50px auto;
+		a {
+			clear: both;
+			margin: 0 20px;
+			text-decoration: none;			
+			&:hover {
+				opacity: 0.8;
+			}		
+		}
+	}	
+}
+
+.footer {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	position: relative;
+	margin: 0 0 15px;
+	height: auto;	
+	&__soc {
+		text-align: center;
+		margin: 10px auto;
+		display: block;
+		width: 40px * 4;	
+		i {
+			display: block;
+			float: left;
+			position: relative;
+			width: 30px;
+			height: 30px;
+			margin: 0 5px;
+			background-repeat: no-repeat;
+			-webkit-background-size: contain;
+			     -o-background-size: contain;
+			        background-size: contain;
+			background-position: center;
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.fb {
+			background-image: url("../img/1409506812_Facebook-128.png");
+		}
+		.tw {
+			background-image: url("../img/1409506837_Twitter-128.png");
+		}
+		.like {
+			background-image: url("../img/1409506972_like-128.png");
+		}
+		.cloud {
+			background-image: url("../img/1409507197_519929-27_Cloud-128.png");
+		}
+	}
+}
+
+.block__infolinks {
+	text-align: center;
+	margin: 20px 0;
+	p {
+		display: inline-block;
+		margin-left: 10px;
+	}
+	a {
+		margin: 0 15px 0 5px;
+	}
+}
+
+.profileselect {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 155px;
+	margin-bottom: 25px;
+	background-image: url("../img/profilebg.png");
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	ol {
+		list-style-type: decimal;
+		display: block;
+		padding: 25px 0;
+		margin: 30px auto 0;
+		background-image: url("../img/olbg.png");
+		-webkit-background-size: 100%;
+		     -o-background-size: 100%;
+		        background-size: 100%;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		width: 815px;
+		li {
+			display: inline-block;
+			margin: 0 25px;
+			color: #FFF;			
+			font-weight: bold;
+			font-size: 24px;
+			a {
+				color: #FFF;
+				text-decoration: underline;
+				font-weight: bold;
+				font-size: 24px;
+			}
+		}
+	}
+	p {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		top: -9px;
+		color: #FFF;
+		text-align: center;
+		font-size: 13px;
+	}
+}
+
+.find-timetable {
+	display: block;
+	position: relative;
+	margin-bottom: 25px; 
+	h5 {
+		font-size: 11px;
+		font-weight: bold;
+		color: #666;
+		padding-left: 20px;
+	}
+	&--box {
+		display: block;
+		position: relative;		
+		width: 100%;
+		background-image: url("../img/bgform.png");
+		padding: 25px 20px 35px;	
+		border-bottom: 5px solid#182F95;
+		border-top: 1px solid #DBDBDB;	
+	}
+	&--form {
+		&--input {
+			display: inline-block;
+			width: 830px;
+			height: 29px;
+			line-height: 29px;
+			border: 1px solid rgba(0,0,0,.1);
+			@include border-radius(3px);
+			@include background-clip(padding-box);
+			background-color: #fff;
+			-webkit-box-shadow: inset 0 2px 5px rgba(0,0,0,.1);
+			-moz-box-shadow: inset 0 2px 5px rgba(0,0,0,.1);
+			box-shadow: inset 0 2px 5px rgba(0,0,0,.1);
+			background-image: url("../img/figure.png");
+			background-repeat: no-repeat;
+			background-position: 10px 50%;
+			padding-left: 35px;
+		}
+		&--sub {
+			display: inline-block;
+			height: 28px;
+			width: 80px;
+			background-color: #364DB3;
+			font-weight: bold;
+			text-align: center;
+			color: #fff;
+			@include border-radius(3px);
+			@include background-clip(padding-box);
+			border: 1px solid #182F95;
+			margin-left: 30px;
+		}
+	}
+	
+}
+
+.block__login {
+	@extend .block__infolinks;
+	background-image: url("../img/line.png");
+	background-repeat: repeat-x;
+	background-position: 50%;
+	span {
+		background-color: #FFF;
+		padding: 0 5px 0 5px;
+	}
+}
