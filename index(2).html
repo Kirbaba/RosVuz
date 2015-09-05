@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Примеры для плагина jQuery Form Styler</title>
+	<link href="js/jquery.formstyler.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="sass/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+	<script>
+		(function($) {
+		$(function() {
+			$('input, select').styler({
+				selectSearch: true
+			});
+		});
+		})(jQuery);
+	</script>
+	
+</head>
+
+<body>
+
+<div class="popup">
+		<div class="popup__box">
+			<h2>Обратная связь преподавателя</h2>
+			<form action="#" class="popup__form">
+				<label for="selectVuz">Учебное заведение:</label>	
+				<select name="selectVuz"	class="width-auto">
+					<option></option>
+					<option>Пункт 1</option>
+					<option>Пункт 2</option>
+					<option>Пункт 3</option>
+					<option>Пункт 4</option>
+					<option>Пункт 5</option>
+				</select>
+				<div class="popup__form--input-box">
+					<label for="subject">Тема сообщения:</label>
+					<input type="text" id="subject" name="subject" class="popup__form--inp">
+				</div>
+				<div class="popup__form--input-box">
+					<label for="email">Тема сообщения:</label>
+					<input type="email" id="email" name="email"  class="popup__form--inp">
+				</div>
+				
+				
+				<label for="mes">Тема сообщения:</label>	
+				<textarea name="mes" id="mes" name="mes" class="popup__form--txt"></textarea>
+				<input type="submit" class="popup__form--sub">		
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

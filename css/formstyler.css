@@ -1,0 +1,324 @@
+/* РЎС‚РёР»РёР·Р°С†РёСЏ select - СЂРµРіРёРѕРЅ */
+.regionSelect.jq-selectbox {
+	vertical-align: middle;
+	cursor: pointer;
+}
+.regionSelect.jq-selectbox .select {
+	background: none repeat scroll 0 0 transparent;
+	font: 12px/14px 'Arial',sans-serif;
+	height: 15px;
+	margin-left: 20px;
+	padding: 2px 18px 0 0;
+	text-shadow: 1px 1px #FFFFFF;
+	max-width: 150px;
+}
+.regionSelect.jq-selectbox .select .text {
+	border-bottom: 1px dotted;
+	color: #134daf;
+	text-shadow: none;
+}
+.regionSelect.jq-selectbox .select:hover {}
+.regionSelect.jq-selectbox .select:active {}
+.regionSelect.jq-selectbox.focused .select {}
+.regionSelect.jq-selectbox.disabled .select {}
+.regionSelect.jq-selectbox .select .text {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.regionSelect.jq-selectbox .trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+}
+.regionSelect.jq-selectbox .trigger .arrow {
+	position: absolute;
+	top: 6px;
+	right: 2px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 6px solid #404040;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+.regionSelect.jq-selectbox:hover .arrow {}
+.regionSelect.jq-selectbox.disabled .arrow {}
+.regionSelect.jq-selectbox .dropdown {
+	top: 18px;
+	width: 155px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #e1e1e1;
+	border-top: 0 none;
+	background: #FFF;
+	box-shadow: 0 4px 4px -2px #555;
+	font-size: 12px;
+	font-family: 'Arial', sans-serif;
+}
+.regionSelect.jq-selectbox ul {
+	margin: 0;
+	padding: 2px 6px 8px;
+}
+.regionSelect.jq-selectbox li {
+	color: #3C3C3C;
+	padding: 5px 10px 7px;
+}
+.regionSelect.jq-selectbox li.selected,
+.regionSelect.jq-selectbox li:hover {
+	background: #4764cd;
+	color: #FFF;
+}
+.regionSelect.jq-selectbox li.disabled {}
+.regionSelect.jq-selectbox li.disabled:hover {}
+.regionSelect.jq-selectbox li.optgroup {}
+.regionSelect.jq-selectbox li.optgroup:hover {}
+.regionSelect.jq-selectbox li.option {}
+
+
+
+
+
+/* РЎС‚РёР»РёР·Р°С†РёСЏ select РІ С€Р°РїРєРµ - РїРѕРёСЃРє */
+.searchSelect.jq-selectbox {
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 13px;
+}
+.searchSelect.jq-selectbox .select {
+	width: 157px;
+	height: 25px;
+	padding: 4px 45px 0 14px;
+	background: url("bg-selectbox-left.png") no-repeat left top transparent;
+	color: #333;
+	text-shadow: 1px 1px #FFF;
+	font: 12px/22px 'Arial', sans-serif;
+}
+.searchSelect.jq-selectbox .select .text {
+	text-shadow: none;
+}
+.searchSelect.jq-selectbox .select:hover {}
+.searchSelect.jq-selectbox .select:active {}
+.searchSelect.jq-selectbox.focused .select {}
+.searchSelect.jq-selectbox.disabled .select {}
+.searchSelect.jq-selectbox .select .text {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.searchSelect.jq-selectbox .trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 33px;
+	height: 100%;
+}
+.searchSelect.jq-selectbox .trigger .arrow {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 6px solid #656565;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+.searchSelect.jq-selectbox:hover .arrow {}
+.searchSelect.jq-selectbox.disabled .arrow {}
+.searchSelect.jq-selectbox .dropdown {
+	top: 29px;
+	width: 216px;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	background: #FFF;
+	box-shadow: 0 2px 2px #555;
+	font-size: 12px;
+	font-family: 'Arial', sans-serif;
+}
+.searchSelect.jq-selectbox ul {
+	margin: 0;
+	padding: 2px 6px 8px;
+}
+.searchSelect.jq-selectbox li {
+	color: #3C3C3C;
+	height: 12px;
+	overflow: hidden;
+	padding: 7px 10px;
+	text-overflow: ellipsis;
+}
+.searchSelect.jq-selectbox li.selected,
+.searchSelect.jq-selectbox li:hover {
+	background: #4764cd;
+	color: #FFF;
+}
+.searchSelect.jq-selectbox li.disabled {}
+.searchSelect.jq-selectbox li.disabled:hover {}
+.searchSelect.jq-selectbox li.optgroup {}
+.searchSelect.jq-selectbox li.optgroup:hover {}
+.searchSelect.jq-selectbox li.option {}
+
+
+
+
+
+/* РЎС‚РёР»РёР·Р°С†РёСЏ select С„РёР»СЊС‚СЂ РІ Р»РµРІРѕР№ РєРѕР»РѕРЅРєРµ */
+.cellFilter .jq-selectbox {
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 13px;
+}
+.cellFilter .jq-selectbox .select {
+	width: 152px;
+	height: 26px;
+	padding: 3px 33px 0 10px;
+	background: url("bg-filter-select.png") no-repeat left top transparent;
+	color: #686868;
+	text-shadow: 1px 1px #FFF;
+	font: 12px/22px 'Arial', sans-serif;
+}
+.cellFilter .jq-selectbox .select .text {
+	text-shadow: none;
+}
+.cellFilter .jq-selectbox .select:hover {}
+.cellFilter .jq-selectbox .select:active {}
+.cellFilter .jq-selectbox.focused .select {}
+.cellFilter .jq-selectbox.disabled .select {}
+.cellFilter .jq-selectbox .select .text {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.cellFilter .jq-selectbox .trigger {
+	background: url("bg-filter-select-arrow.png") no-repeat right top transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 28px;
+	height: 100%;
+}
+.cellFilter .jq-selectbox .trigger .arrow {
+	position: absolute;
+	top: 12px;
+	right: 9px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 6px solid #424242;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+.cellFilter .jq-selectbox:hover .arrow {}
+.cellFilter .jq-selectbox.disabled .arrow {}
+.cellFilter .jq-selectbox .dropdown {
+	top: 27px;
+	width: 193px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #c2c3c3;
+	background: #FFF;
+	font: normal 12px 'Arial', sans-serif;
+	height: 100%;
+}
+.cellFilter .jq-selectbox ul {
+	margin: 0;
+	padding: 0;
+}
+.cellFilter .jq-selectbox li {
+	color: #545454;
+	padding: 6px 9px;
+	text-overflow: ellipsis;
+}
+.cellFilter .jq-selectbox li.selected,
+.cellFilter .jq-selectbox li:hover {
+	color: #FFF;
+	background: #4862c3;
+}
+.cellFilter .jq-selectbox li.disabled {}
+.cellFilter .jq-selectbox li.disabled:hover {}
+.cellFilter .jq-selectbox li.optgroup {}
+.cellFilter .jq-selectbox li.optgroup:hover {}
+.cellFilter .jq-selectbox li.option {}
+
+
+
+
+
+.jq-checkbox {
+	background: url("bg-filter-checkbox.png") no-repeat scroll left top transparent;
+	border: 0 none;
+	border-radius: 2px 2px 2px 2px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 17px;
+	margin-right: 8px;
+	position: relative;
+	width: 16px;
+}
+.jq-checkbox.checked {
+	background-position: right top;
+}
+.jq-checkbox.focused {}
+.jq-checkbox.disabled {}
+
+
+
+.custom-selector .select {
+    background: #f4f4f4;
+    font-size: 14px;
+    color: #5e5e5e;
+    box-shadow: inset 3px 5px 5px rgba(0,0,0,0.05);
+    padding: 9px 0 9px 18px;
+    width: 532px;
+    border-radius: 5px;
+}
+.custom-selector .trigger {
+    background: url("custom-select-arrow.png") no-repeat right top transparent;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 35px;
+    height: 100%;
+    cursor: pointer;
+}
+.custom-selector .dropdown {
+    width: 548px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #c2c3c3;
+    background: #FFF;
+    font: normal 12px 'Arial', sans-serif;
+}
+.custom-selector .jq-selectbox li {
+    padding: 6px 9px;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.custom-selector .jq-selectbox li.selected, .custom-selector .jq-selectbox li:hover {
+    color: #FFF;
+    background: #4862c3;
+}
+
+
+.myProfileMenu .select {
+    background: #f4f4f4;
+    font-size: 14px;
+    color: #5e5e5e;
+    box-shadow: inset 3px 5px 5px rgba(0,0,0,0.05);
+    padding: 6px 42px 0 18px;
+    width: 492px;
+    border-radius: 5px;
+    height: 28px;
+    overflow: hidden;
+    line-height: 24px;
+}
