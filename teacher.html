@@ -3,13 +3,15 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link href="js/jquery.formstyler.css" rel="stylesheet" />
+	<title>Document</title>	
+	<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
+  
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="sass/style.css">
+	<link rel="stylesheet" href="sass/style.css">		
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/jquery.formstyler.js"></script>
+	
 	<script>
 		(function($) {
 		$(function() {
@@ -19,11 +21,147 @@
 		});
 		})(jQuery);
 	</script>
-	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/eye.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/layout.js?ver=1.0.2"></script>
+	<script type="text/javascript" src="js/script.js"></script>	
 </head>
 <body>
+	<section class="maincontent">
+		<div class="container">
+			<h1>Расписание вузов</h1>
+			<div class="block__infolinks">
+				<span>
+					<p>Справочная информация:</p>
+					<a href="#" class="green-webinar">Росвуз</a>
+					<a href="#" class="green-webinar">Для студентов</a>
+					<a href="#" class="green-webinar">Для преподавателей</a>
+					<a href="#" class="green-webinar">Для вузов</a>
+				</span>
+			</div>
+			<div class="search">
+				<div class="search__title">
+					<h4>Поиск расписания вуза</h4>
+				</div>
+				<div class="search__box">
+					<label for="search__status">Иванов Иван Иванович</label>
+					<select name="search__status" id="search__status">
+						<option value="#">Я преподаватель</option>
+						<option value="#">Я преподаватель</option>
+						<option value="#">Я преподаватель</option>
+					</select>
+					<a href="#" class="my_group">Мои группы</a>
+					<a href="#" class="alarm">Будильник</a>
+					<a href="#" class="my_coments">Мои комментарии</a>
+					<a href="#" class="favorites">Избранное</a>
+					<a href="#" class="my_tasks">Мои задания</a>
+					<div class="search__container">
+						<form action="">
+							<div class="search__container-left">
+								<label for="search-city">Горород:</label>
+								<select name="search-city" id="search-city">
+									<option>Ярославская область, Ярославль</otion>
+									<option>Ярославская область, Ярославль</otion>
+									<option>Ярославская область, Ярославль</otion>
+								</select>
+								<label for="search-fac">Факультет:</label>
+								<select name="search-fac" id="search-fac">
+									<option>Программное обеспечение</otion>
+									<option>Программное обеспечение</otion>
+									<option>Программное обеспечение</otion>
+								</select>
+							</div>
+							<div class="search__container-right">
+								<label>Учебное заведение</label>
+								<select name="search-vuz" id="search-vuz">
+									<option>Ярославский градостроительный колледж</otion>
+									<option>Ярославский градостроительный колледж</otion>
+									<option>Ярославский градостроительный колледж</otion>
+								</select>
+								<div class="search-teacherblock">
+									<label>Преподаватель:</label>
+									<select name="search-name" id="search-name">
+										<option>Иванов Иван Иванович</otion>
+										<option>Иванов Иван Иванович</otion>
+										<option>Иванов Иван Иванович</otion>
+									</select>
+								</div>
+								<div class="search-dateblock">
+									<label for="date">Календарь:</label>
+									<!-- <input type="date" name="date"> -->
+									<input class="inputDate" id="inputDate"  value="06/14/2015"/>
+								</div>
+								
+								<input type="submit" value="Показать расписание" class="search-sub">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<article class="timetable">
+				<div class="timetable__head">
+					<h4>02 сентября 2015г.</h4>
+					<h4 class="timetable-day">Понедельник</h4>
+					<h3>ПО 2-31 </h3>
+					<a href="#" class="green-webinar timetable__head-group">Рассписание группы</a>
+					<a href="#" class="green-webinar add_favor">Добавить в избранное</a>
+				</div>
+				<div class="timetable__list">
+					<div class="timetable__list-line">
+						<h2>08:00 - 09:50</h2>
+						<h3>Практика информатика</h3>
+						<div class="timetable__list-line--buts">
+							<a href="#" class="green-webinar">Аудитория</a>
+						</div>
+					</div>
+					<div class="timetable__list-line">
+						<h2>10:00 - 11:50</h2>
+						<h3>Экономика в финформатике</h3>
+					</div>
+				</div>
+			</article>
+		</div>		
+	</section>
 
 
+	
 
+	<section class="application">
+		<div class="container">
+			<div class="application__but">
+				<a href="#nowhere">
+				  <img alt="Get it on Google Play" src="/img/google_play.png" />
+				</a>
+				<a href="#nowhere">
+					<img src="/img/app_store.png" alt="">
+				</a>
+				<a href="#nowhere">
+					<img src="/img/win_store.png" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="block__infolinks">
+				<span>
+					<p>Справочная информация:</p>
+					<a href="#" class="green-webinar">Росвуз</a>
+					<a href="#" class="green-webinar">Для студентов</a>
+					<a href="#" class="green-webinar">Для преподавателей</a>
+					<a href="#" class="green-webinar">Для вузов</a>
+				</span>
+			</div>
+			<div class="footer__soc">				
+				<i class="fb"><a href="#"></a></i>
+				<i class="tw"><a href="#"></a></i>
+				<i class="like"><a href="#"></a></i>
+				<i class="cloud"><a href="#"></a></i>		
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
