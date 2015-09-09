@@ -722,25 +722,39 @@ a {
       background-repeat: no-repeat;
       background-position: 0 50%;
       padding-left: 25px; }
+    .timetable__head__upservice {
+      font-size: 11px;
+      color: #F00;
+      display: inline-block;
+      margin: 0; }
   .timetable__list {
     display: block;
     padding: 0 20px 0;
     background-color: #FBFBFB;
     border-bottom: 1px solid #F0F1F4; }
-    .timetable__list-line, .timetable__list-line--comm {
+    .timetable__list-line, .timetable__list-line--comm, .timetable__list-line--upservice {
       border-bottom: 1px dashed #e1e1e1;
       height: 65px;
       line-height: 65px; }
-      .timetable__list-line--comm {
+      .timetable__list-line--comm, .timetable__list-line--upservice {
         border-bottom: none; }
-      .timetable__list-line h2, .timetable__list-line--comm h2 {
+      .timetable__list-line--upservice h3 {
+        line-height: 25px;
+        margin: 15px 0 0 0 !important; }
+        .timetable__list-line--upservice h3 span {
+          line-height: normal;
+          font-size: 12px;
+          color: #666;
+          display: block;
+          font-weight: normal; }
+      .timetable__list-line h2, .timetable__list-line--comm h2, .timetable__list-line--upservice h2 {
         display: inline-block;
         margin: 0;
         color: #656565;
         font-family: "Arial";
         font-size: 30px;
         font-weight: bold; }
-      .timetable__list-line h3, .timetable__list-line--comm h3 {
+      .timetable__list-line h3, .timetable__list-line--comm h3, .timetable__list-line--upservice h3 {
         display: inline-block;
         color: #656565;
         font-family: "Arial";
@@ -786,6 +800,8 @@ a {
           background-image: url("../img/comm.png"); }
         .timetable__list-line--buts .audbl {
           background-image: url("../img/audblue.png"); }
+        .timetable__list-line--buts .delete {
+          background-image: url("../img/del-icon.png"); }
     .timetable__list-soc {
       display: inline-block;
       padding: 10px 0; }
@@ -845,7 +861,7 @@ a {
       .timetable__commentbox-sub:hover {
         background-color: #344cb4; }
     .timetable__commentbox--board {
-      margin: 20px 0 5px;
+      margin: 20px 0 0;
       border-bottom: 1px dashed #e1e1e1; }
       .timetable__commentbox--board--top {
         margin: 10px 0; }

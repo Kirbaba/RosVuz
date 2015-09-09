@@ -833,6 +833,12 @@ a {
 			background-position: 0 50%;
 			padding-left: 25px;
 		}
+		&__upservice {
+			font-size: 11px;
+			color: #F00;
+			display: inline-block;
+			margin: 0;
+		}
 	}
 	&__list {
 		display: block;
@@ -843,6 +849,21 @@ a {
 			&--comm {
 				@extend .timetable__list-line;
 				border-bottom: none;
+			}
+			&--upservice {
+				@extend .timetable__list-line--comm;				
+				h3 {
+					line-height: 25px;
+					margin: 15px 0 0 0!important;
+					span {
+						line-height: normal;
+						font-size: 12px;
+						color: #666;
+						display: block;
+						font-weight: normal;
+					}
+					
+				}
 			}
 			border-bottom: 1px dashed #e1e1e1;
 			height: 65px;
@@ -910,6 +931,9 @@ a {
 				}
 				.audbl {
 					background-image: url("../img/audblue.png");
+				}
+				.delete {
+					background-image: url("../img/del-icon.png");
 				}
 			}
 		}
@@ -989,7 +1013,7 @@ a {
 			}
 		}
 		&--board {
-			margin: 20px 0 5px;
+			margin: 20px 0 0;
 			border-bottom: 1px dashed #e1e1e1;
 			&--top {
 				margin: 10px 0;
