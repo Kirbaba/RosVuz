@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>	
+	<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
+  
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="sass/style.css">		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+	<script type="text/javascript" src="js/jquery.timepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css" />
+	<script>
+		(function($) {
+		$(function() {
+			$('input, select').styler({
+				selectSearch: true
+			});
+		});
+		})(jQuery);
+	</script>	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/eye.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/layout.js?ver=1.0.2"></script>
+	<script type="text/javascript" src="js/script.js"></script>	
+	<script type="text/javascript" src="js/jquery.timepicker.js"></script>	
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="js//site.js"></script>
+	<script src="//cdn.ckeditor.com/4.5.3/basic/ckeditor.js"></script>
+</head>
+<body>	
+	<section class="maincontent">
+		<div class="container">
+			<h1>Расписание вузов</h1>
+			<div class="block__infolinks">
+				<span>
+					<p>Справочная информация:</p>
+					<a href="#" class="green-webinar">Росвуз</a>
+					<a href="#" class="green-webinar">Для студентов</a>
+					<a href="#" class="green-webinar">Для преподавателей</a>
+					<a href="#" class="green-webinar">Для вузов</a>
+				</span>
+			</div>
+			<div class="search">
+				<div class="search__title">
+					<h4>Поиск расписания вуза</h4>
+				</div>
+				<div class="search__box">
+					<label for="search__status">Иванов Иван Иванович</label>
+					<select name="search__status" id="search__status">
+						<option value="#">Я студент</option>
+						<option value="#">Я преподаватель</option>
+						<option value="#">Я преподаватель</option>
+					</select>
+					<div class="search__box-butts">
+						
+						<a href="#" class="alarm">Будильник</a>
+						<a href="#" class="my_coments">Мои комментарии</a>
+						<a href="#" class="favorites">Избранное</a>
+						<a href="#" class="my_tasks">Мои задания</a>
+					</div>					
+				</div>
+			</div>
+			<article class="timetable">				
+				<div class="timetable__head">
+					<h4>03 сентября 2015г.</h4>
+					<h4 class="timetable-day">Вторник</h4>
+					<h3>ПО 2-31 </h3>
+					<a href="#" class="green-webinar timetable__head-group">Рассписание группы</a>
+					<a href="#" class="green-webinar add_favor">Добавить в избранное</a>
+				</div>
+				<div class="timetable__list">
+					<div class="timetable__list-line--comm">
+						<h2>12:15 - 14:35</h2>
+						<h3>Физическая культура</h3>
+						<div class="timetable__list-line--buts">
+							<i class="audbl"><a href="#"></a></i>
+							<i class="add"><a href="#"></a></i>
+							<i class="write"><a href="#"></a></i>
+							<i class="comm"><a href="#"></a></i>
+						</div>
+					</div>
+					<div class="timetable__commentbox">
+						<form action="#">
+							<textarea name="editor1"></textarea>
+					        <script>
+					            CKEDITOR.replace( 'editor1' );
+					        </script>
+					        <input type="submit" value="Отправить" class="timetable__commentbox-sub">
+					        
+				        </form>
+			        </div>
+			        <div class="timetable__commentbox--board">
+					        	<div class="timetable__commentbox--board--top">
+					        		<div class="timetable__commentbox--board-head">
+					        			<div class="timetable__commentbox--board-head_img">
+					        				<img src="/img/avatar1.png" alt="">
+					        			</div>
+					        			<div class="timetable__commentbox--board-head_info">
+					        				<a href="#">Иван Иванов</a>
+					        				<small>14 августа 2015, 11:07</small>
+					        			</div>
+					        		</div>
+					        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos cum dolorum voluptas adipisci, odio fugiat sit eos doloremque earum, molestiae unde, voluptates tempore quisquam voluptatem ducimus debitis modi at! Ab!</p>
+					        			<a href="#" class="green-webinar">ответить</a>
+					        	</div>
+					        	<div class="timetable__commentbox--board--bot">
+					        		<div class="timetable__commentbox--board-head">
+					        			<div class="timetable__commentbox--board-head_img">
+					        				<img src="/img/avatar2.png" alt="">
+					        			</div>
+					        			<div class="timetable__commentbox--board-head_info">
+					        				<a href="#">Алексей Петров</a>
+					        				<small>14 августа 2015, 11:07</small>
+					        			</div>
+					        		</div>
+					        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nobis dicta odit sapiente, illum ea?</p>
+					        			<a href="#" class="green-webinar">ответить</a>
+					        	</div>
+					        	<div class="timetable__commentbox--board--top">
+					        		<div class="timetable__commentbox--board-head">
+					        			<div class="timetable__commentbox--board-head_img">
+					        				<img src="/img/avatar3.png" alt="">
+					        			</div>
+					        			<div class="timetable__commentbox--board-head_info">
+					        				<a href="#">Елена Краснова</a>
+					        				<small>14 августа 2015, 11:07</small>
+					        			</div>
+					        		</div>
+					        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit enim, autem veniam accusantium laborum, blanditiis id rerum, ullam labore quas at saepe atque corrupti ipsa.</p>
+					        			<a href="#" class="green-webinar">ответить</a>
+					        	</div>
+					        </div>
+					        <div class="timetable__list-soc">
+								<a href="#" class="mc"></a>
+								<a href="#" class="vk"></a>
+								<a href="#" class="fb"></a>
+								<a href="#" class="tw"></a>
+								<a href="#" class="ok"></a>
+								<a href="#" class="ml"></a>
+								<a href="#" class="lj"></a>
+								<a href="#" class="ff"></a>
+								<a href="#" class="fl"></a>
+								<a href="#" class="gp"></a>
+								<a href="#" class="br"></a>
+							</div>
+				</div>				
+			</article>
+			<div class="block__infolinks">
+				<span>					
+					<a href="#" class="green-webinar">Вернуться к расписанию</a>					
+				</span>
+			</div>
+		</div>		
+	</section>
+
+
+	
+
+	<section class="application">
+		<div class="container">
+			<div class="application__but">
+				<a href="#nowhere">
+				  <img alt="Get it on Google Play" src="/img/google_play.png" />
+				</a>
+				<a href="#nowhere">
+					<img src="/img/app_store.png" alt="">
+				</a>
+				<a href="#nowhere">
+					<img src="/img/win_store.png" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="block__infolinks">
+				<span>
+					<p>Справочная информация:</p>
+					<a href="#" class="green-webinar">Росвуз</a>
+					<a href="#" class="green-webinar">Для студентов</a>
+					<a href="#" class="green-webinar">Для преподавателей</a>
+					<a href="#" class="green-webinar">Для вузов</a>
+				</span>
+			</div>
+			<div class="footer__soc">				
+				<i class="fb"><a href="#"></a></i>
+				<i class="tw"><a href="#"></a></i>
+				<i class="like"><a href="#"></a></i>
+				<i class="cloud"><a href="#"></a></i>		
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

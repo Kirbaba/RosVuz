@@ -840,6 +840,10 @@ a {
 		background-color: #FBFBFB;
 		border-bottom: 1px solid #F0F1F4;
 		&-line {
+			&--comm {
+				@extend .timetable__list-line;
+				border-bottom: none;
+			}
 			border-bottom: 1px dashed #e1e1e1;
 			height: 65px;
 			line-height: 65px;
@@ -957,6 +961,80 @@ a {
 			}
 		}
 	}
+	&__commentbox {
+		margin: 15px 0;
+		div#cke_1_contents {
+			height: 135px!important;
+		}
+		&-sub {
+			display: inline-block;
+			width: 115px;
+			height: 29px;
+			cursor: pointer;
+			background-color: #4F66CC;		
+			border: 1px solid #3047AD;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			cursor: pointer;
+			line-height: 24px;
+			color: #FFF;
+			font-family: "Arial";
+			font-size: 14px;
+			font-weight: bold;
+			@include text-shadow(0 1px 1px rgba(0,0,0,.4));
+			text-align: center;
+			margin-top: 19px;
+			&:hover {
+				background-color: darken(#4F66CC, 10%);
+			}
+		}
+		&--board {
+			margin: 20px 0 5px;
+			border-bottom: 1px dashed #e1e1e1;
+			&--top {
+				margin: 10px 0;
+			}
+			&--bot {
+				margin: 10px 0 10px 0;
+				border-left: 2px solid rgba(209, 211, 209, 0.5);
+				padding-left: 30px;
+			}
+			&-head {
+				&_img {
+					display: block;
+					float: left;
+					width: 34px;
+					height: 34px;
+					margin-right: 10px;
+					overflow: hidden;
+				}
+				&_info {
+					display: block;
+					a {
+						color: #1f3f9d;
+						font-family: "Arial";
+						font-size: 14px;
+						font-weight: bold;						
+					}
+					small {
+						display: block;
+						opacity: 0.75;
+						color: #333;
+						font-family: "Tahoma";
+						font-size: 11px;
+						margin-top: 3px;
+					}					
+				}				
+			}
+			p {
+				padding: 10px 20px;
+				background-color: #FFF;
+				border: 1px solid rgba(0,0,0,.07);
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+	}
 	&__editing {
 		display: inline-block;
 		padding-bottom: 25px;
@@ -989,7 +1067,7 @@ a {
 			box-shadow: inset 0 2px 5px rgba(0,0,0,.1);
 			padding-left: 5px;
 		}
-	}
+	}	
 }
 
 .timepicker-box {

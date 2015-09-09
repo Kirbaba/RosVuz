@@ -727,18 +727,20 @@ a {
     padding: 0 20px 0;
     background-color: #FBFBFB;
     border-bottom: 1px solid #F0F1F4; }
-    .timetable__list-line {
+    .timetable__list-line, .timetable__list-line--comm {
       border-bottom: 1px dashed #e1e1e1;
       height: 65px;
       line-height: 65px; }
-      .timetable__list-line h2 {
+      .timetable__list-line--comm {
+        border-bottom: none; }
+      .timetable__list-line h2, .timetable__list-line--comm h2 {
         display: inline-block;
         margin: 0;
         color: #656565;
         font-family: "Arial";
         font-size: 30px;
         font-weight: bold; }
-      .timetable__list-line h3 {
+      .timetable__list-line h3, .timetable__list-line--comm h3 {
         display: inline-block;
         color: #656565;
         font-family: "Arial";
@@ -818,6 +820,66 @@ a {
         background: url("../img/soc-icons.png") -189px 0; }
       .timetable__list-soc .br {
         background: url("../img/soc-icons.png") -210px 0; }
+  .timetable__commentbox {
+    margin: 15px 0; }
+    .timetable__commentbox div#cke_1_contents {
+      height: 135px !important; }
+    .timetable__commentbox-sub {
+      display: inline-block;
+      width: 115px;
+      height: 29px;
+      cursor: pointer;
+      background-color: #4F66CC;
+      border: 1px solid #3047AD;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      cursor: pointer;
+      line-height: 24px;
+      color: #FFF;
+      font-family: "Arial";
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      margin-top: 19px; }
+      .timetable__commentbox-sub:hover {
+        background-color: #344cb4; }
+    .timetable__commentbox--board {
+      margin: 20px 0 5px;
+      border-bottom: 1px dashed #e1e1e1; }
+      .timetable__commentbox--board--top {
+        margin: 10px 0; }
+      .timetable__commentbox--board--bot {
+        margin: 10px 0 10px 0;
+        border-left: 2px solid rgba(209, 211, 209, 0.5);
+        padding-left: 30px; }
+      .timetable__commentbox--board-head_img {
+        display: block;
+        float: left;
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
+        overflow: hidden; }
+      .timetable__commentbox--board-head_info {
+        display: block; }
+        .timetable__commentbox--board-head_info a {
+          color: #1f3f9d;
+          font-family: "Arial";
+          font-size: 14px;
+          font-weight: bold; }
+        .timetable__commentbox--board-head_info small {
+          display: block;
+          opacity: 0.75;
+          color: #333;
+          font-family: "Tahoma";
+          font-size: 11px;
+          margin-top: 3px; }
+      .timetable__commentbox--board p {
+        padding: 10px 20px;
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        font-size: 12px;
+        line-height: 20px; }
   .timetable__editing {
     display: inline-block;
     padding-bottom: 25px; }
