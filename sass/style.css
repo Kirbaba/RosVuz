@@ -959,4 +959,52 @@ a {
   .timepicker-box:last-of-type {
     margin: 0 0 0 30px; }
 
+#search-my-group-styler {
+  width: 185px;
+  height: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fff;
+  -moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  line-height: 29px;
+  background-image: url("../img/bottom.png");
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 10px;
+  float: left;
+  display: block;
+  font-size: 11px; }
+  #search-my-group-styler .jq-selectbox__dropdown {
+    width: 183px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    -moz-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 29px; }
+    #search-my-group-styler .jq-selectbox__dropdown ul {
+      padding: 0;
+      margin: 5px 0; }
+      #search-my-group-styler .jq-selectbox__dropdown ul li {
+        padding-left: 5px;
+        cursor: pointer; }
+        #search-my-group-styler .jq-selectbox__dropdown ul li:hover {
+          background: #4764cd;
+          color: #FFF; }
+
 /*# sourceMappingURL=style.css.map */

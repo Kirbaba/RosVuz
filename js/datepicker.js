@@ -135,7 +135,7 @@
 				mode: 'single',
 				view: 'days',
 				calendars: 1,
-				format: 'Y-m-d',
+				format: 'd-m-Y',
 				position: 'bottom',
 				eventName: 'click',
 				onRender: function(){return {};},
