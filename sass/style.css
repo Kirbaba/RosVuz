@@ -464,17 +464,19 @@ a {
     margin: 15px 0 0;
     padding: 25px 0 0;
     border-top: 2px dashed #d8d8d8; }
-    .search__container-left {
+    .search__container-left, .search__container-left--addtask {
       width: 360px;
       display: block;
       float: left; }
-      .search__container-left label {
+      .search__container-left--addtask .timepicker-box:last-of-type {
+        margin: 0; }
+      .search__container-left label, .search__container-left--addtask label {
         color: #999;
         font-family: "Arial";
         font-size: 11px;
         margin-bottom: 5px;
         display: block; }
-      .search__container-left #search-city-styler, .search__container-left #search-subj-styler, .search__container-left #search-fac-styler {
+      .search__container-left #search-city-styler, .search__container-left--addtask #search-city-styler, .search__container-left #search-subj-styler, .search__container-left--addtask #search-subj-styler, .search__container-left #search-fac-styler, .search__container-left--addtask #search-fac-styler {
         width: 360px;
         height: 29px;
         border: 1px solid rgba(0, 0, 0, 0.1);
@@ -498,7 +500,7 @@ a {
         -ms-user-select: none;
         user-select: none;
         margin-bottom: 10px; }
-        .search__container-left #search-city-styler .jq-selectbox__dropdown, .search__container-left #search-subj-styler .jq-selectbox__dropdown, .search__container-left #search-fac-styler .jq-selectbox__dropdown {
+        .search__container-left #search-city-styler .jq-selectbox__dropdown, .search__container-left--addtask #search-city-styler .jq-selectbox__dropdown, .search__container-left #search-subj-styler .jq-selectbox__dropdown, .search__container-left--addtask #search-subj-styler .jq-selectbox__dropdown, .search__container-left #search-fac-styler .jq-selectbox__dropdown, .search__container-left--addtask #search-fac-styler .jq-selectbox__dropdown {
           width: 358px;
           border: 1px solid rgba(0, 0, 0, 0.1);
           -moz-background-clip: padding;
@@ -509,18 +511,18 @@ a {
           -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
           line-height: 29px; }
-          .search__container-left #search-city-styler .jq-selectbox__dropdown ul, .search__container-left #search-subj-styler .jq-selectbox__dropdown ul, .search__container-left #search-fac-styler .jq-selectbox__dropdown ul {
+          .search__container-left #search-city-styler .jq-selectbox__dropdown ul, .search__container-left--addtask #search-city-styler .jq-selectbox__dropdown ul, .search__container-left #search-subj-styler .jq-selectbox__dropdown ul, .search__container-left--addtask #search-subj-styler .jq-selectbox__dropdown ul, .search__container-left #search-fac-styler .jq-selectbox__dropdown ul, .search__container-left--addtask #search-fac-styler .jq-selectbox__dropdown ul {
             padding: 0;
             margin: 5px 0; }
-            .search__container-left #search-city-styler .jq-selectbox__dropdown ul li, .search__container-left #search-subj-styler .jq-selectbox__dropdown ul li, .search__container-left #search-fac-styler .jq-selectbox__dropdown ul li {
+            .search__container-left #search-city-styler .jq-selectbox__dropdown ul li, .search__container-left--addtask #search-city-styler .jq-selectbox__dropdown ul li, .search__container-left #search-subj-styler .jq-selectbox__dropdown ul li, .search__container-left--addtask #search-subj-styler .jq-selectbox__dropdown ul li, .search__container-left #search-fac-styler .jq-selectbox__dropdown ul li, .search__container-left--addtask #search-fac-styler .jq-selectbox__dropdown ul li {
               padding-left: 5px;
               cursor: pointer; }
-              .search__container-left #search-city-styler .jq-selectbox__dropdown ul li:hover, .search__container-left #search-subj-styler .jq-selectbox__dropdown ul li:hover, .search__container-left #search-fac-styler .jq-selectbox__dropdown ul li:hover {
+              .search__container-left #search-city-styler .jq-selectbox__dropdown ul li:hover, .search__container-left--addtask #search-city-styler .jq-selectbox__dropdown ul li:hover, .search__container-left #search-subj-styler .jq-selectbox__dropdown ul li:hover, .search__container-left--addtask #search-subj-styler .jq-selectbox__dropdown ul li:hover, .search__container-left #search-fac-styler .jq-selectbox__dropdown ul li:hover, .search__container-left--addtask #search-fac-styler .jq-selectbox__dropdown ul li:hover {
                 background: #4764cd;
                 color: #FFF; }
-      .search__container-left .jq-selectbox__select {
+      .search__container-left .jq-selectbox__select, .search__container-left--addtask .jq-selectbox__select {
         padding-left: 5px; }
-        .search__container-left .jq-selectbox__select-text {
+        .search__container-left .jq-selectbox__select-text, .search__container-left--addtask .jq-selectbox__select-text {
           color: #3f59b7; }
     .search__container-right {
       width: 560px;
@@ -899,10 +901,12 @@ a {
   .timetable__editing {
     display: inline-block;
     padding-bottom: 25px; }
-    .timetable__editing-line {
+    .timetable__editing-line, .timetable__editing-line--addtask {
       display: inline-block;
       border-bottom: 1px dashed #e1e1e1;
       padding: 25px 0; }
+      .timetable__editing-line--addtask {
+        width: 100%; }
     .timetable__editing .del_lesson {
       display: inline-block;
       color: #f00;
@@ -913,8 +917,8 @@ a {
       margin-left: 20px; }
       .timetable__editing .del_lesson:hover {
         text-decoration: underline; }
-    .timetable__editing .subj_name {
-      width: 360px;
+    .timetable__editing .subj_name, .timetable__editing .subj_name--addtask, .timetable__editing .subj_adress--addtask {
+      width: 700px;
       height: 29px;
       border: 1px solid rgba(0, 0, 0, 0.1);
       -webkit-border-radius: 3px;
@@ -926,6 +930,9 @@ a {
       background-color: #fff;
       box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
       padding-left: 5px; }
+    .timetable__editing .subj_adress--addtask {
+      resize: none;
+      height: 124px; }
 
 .timepicker-box {
   display: inline-block;
