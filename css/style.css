@@ -83,3 +83,7 @@
 	    -ms-user-select: none;
 	        user-select: none;
 }
+
+.showMap {
+	display: block;
+}

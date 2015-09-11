@@ -208,7 +208,7 @@ a {
 	&--form {
 		&--input {
 			display: inline-block;
-			width: 790px;
+			width: 84%;
 			height: 29px;
 			line-height: 29px;
 			border: 1px solid rgba(0,0,0,.1);
@@ -226,7 +226,7 @@ a {
 		&--sub {
 			display: inline-block;
 			height: 28px;
-			width: 80px;
+			width: 8%;
 			background-color: #364DB3;
 			font-weight: bold;
 			text-align: center;
@@ -234,7 +234,7 @@ a {
 			@include border-radius(3px);
 			@include background-clip(padding-box);
 			border: 1px solid #182F95;
-			margin-left: 30px;
+			margin-left: 3%;
 		}
 	}
 	
@@ -872,8 +872,7 @@ a {
 					
 				}
 			}
-			border-bottom: 1px dashed #e1e1e1;
-			height: 65px;
+			border-bottom: 1px dashed #e1e1e1;			
 			line-height: 65px;
 			h2 {
 				display: inline-block;
@@ -1093,7 +1092,8 @@ a {
 
 		}
 		.subj_name {
-			width: 700px;
+			width: 360px;
+			
 			height: 29px;
 			border: 1px solid rgba(0,0,0,.1);
 			@include border-radius(3px);
@@ -1104,6 +1104,7 @@ a {
 		}
 		.subj_name--addtask {
 			@extend .subj_name;
+			width: 700px;
 		}
 
 		.subj_adress--addtask {
@@ -1190,3 +1191,40 @@ a {
 		}
 	}
 }
+
+.showMap {
+	display: none;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 10px;
+} 
+
+#siteNotice {
+	width: 300px;
+	height: 100px;
+	line-height: 20px;
+	overflow: inherit;
+	font-size: 12px;
+	font-family: Arial;
+	color: #333;
+}
+
+.gm-style-iw {
+	div {
+		overflow: inherit!important;
+		height: 100px;
+	}
+}
+
+#map_canvas {
+	img {
+		display: block;
+		width: 150px;
+		height: 150px;
+		margin: 50px auto 0 auto;
+		
+	}
+}
+
+
+
