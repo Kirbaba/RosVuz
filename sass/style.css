@@ -767,6 +767,8 @@ a {
         font-weight: bold;
         margin: 0 15px 0 10px;
         vertical-align: super; }
+      .timetable__list-line h3.green-webinar, .timetable__list-line--comm h3.green-webinar, .timetable__list-line--upservice h3.green-webinar {
+        color: #77B31D; }
       .timetable__list-line--buts {
         float: right; }
         .timetable__list-line--buts .audience {
@@ -807,6 +809,20 @@ a {
           background-image: url("../img/audblue.png"); }
         .timetable__list-line--buts .delete {
           background-image: url("../img/del-icon.png"); }
+        .timetable__list-line--buts .mycomments {
+          min-width: 225px; }
+          .timetable__list-line--buts .mycomments .all_comm {
+            color: #8B8B8B;
+            background-image: url("../img/comm.png");
+            padding: 10px 0 10px 30px;
+            background-repeat: no-repeat;
+            background-position: left center; }
+          .timetable__list-line--buts .mycomments .new_comm {
+            color: #77B31D;
+            margin-left: 5px;
+            text-decoration: none; }
+            .timetable__list-line--buts .mycomments .new_comm:hover {
+              text-decoration: none; }
     .timetable__list-soc {
       display: inline-block;
       padding: 10px 0; }
