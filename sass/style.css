@@ -723,6 +723,11 @@ a {
       background-repeat: no-repeat;
       background-position: 0 50%;
       padding-left: 25px; }
+    .timetable__head .del_favor {
+      float: right;
+      color: #f00;
+      font-family: "Arial";
+      font-size: 11px; }
     .timetable__head__upservice {
       font-size: 11px;
       color: #F00;
@@ -740,7 +745,7 @@ a {
         border-bottom: none; }
       .timetable__list-line--upservice h3 {
         line-height: 25px;
-        margin: 15px 0 0 0 !important; }
+        margin: 15px 0 0 15px !important; }
         .timetable__list-line--upservice h3 span {
           line-height: normal;
           font-size: 12px;

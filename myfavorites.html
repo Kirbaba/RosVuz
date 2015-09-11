@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>	
+	<link rel="stylesheet" href="css/datepicker.css" type="text/css" />
+  
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="sass/style.css">		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
+	
+	<script>
+		(function($) {
+		$(function() {
+			$('input, select').styler({
+				selectSearch: true
+			});
+		});
+		})(jQuery);
+	</script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/eye.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/layout.js?ver=1.0.2"></script>
+	<script type="text/javascript" src="js/script.js"></script>	
+</head>
+<body>
+	<section class="maincontent">
+		<div class="container">
+			<h1>Расписание вузов</h1>
+			<div class="block__infolinks">
+				<span>
+					<p>Справочная информация:</p>
+					<a href="#" class="green-webinar">Росвуз</a>
+					<a href="#" class="green-webinar">Для студентов</a>
+					<a href="#" class="green-webinar">Для преподавателей</a>
+					<a href="#" class="green-webinar">Для вузов</a>
+				</span>
+			</div>
+			<div class="search">
+				<div class="search__title">
+					<h4>Поиск расписания вуза</h4>
+				</div>
+				<div class="search__box">
+					<label for="search__status">Иванов Иван Иванович</label>
+					<select name="search__status" id="search__status">
+						<option value="#">Я студент</option>
+						<option value="#">Я преподаватель</option>
+						<option value="#">Я преподаватель</option>
+					</select>
+					<div class="search__box-butts">
+						
+						<a href="#" class="alarm">Будильник</a>
+						<a href="#" class="my_coments">Мои комментарии</a>
+						<a href="#" class="favorites">Избранное</a>
+						<a href="#" class="my_tasks">Мои задания</a>
+					</div>
+					
+				</div>
+			</div>
+			<article class="timetable">
+				<div class="timetable__head">
+					<h4>02 сентября 2015г.</h4>
+					<h4 class="timetable-day">Понедельник</h4>					
+					<a href="#" class="del_favor">Добавить в избранное</a>
+				</div>
+				<div class="timetable__list">
+					<div class="timetable__list-line--upservice">
+						<h2>08:00 - 09:50</h2>
+						<h3>Практика информатика</h3>
+						<div class="timetable__list-line--buts">
+							<i class="audbl"><a href="#"></a></i>
+							<i class="add"><a href="#"></a></i>
+							<i class="write"><a href="#"></a></i>
+							<i class="comm"><a href="#"></a></i>
+						</div>						
+					</div>				
+				</div>
+				<div class="timetable__head">
+					<h4>03 сентября 2015г.</h4>
+					<h4 class="timetable-day">Вторник</h4>
+					
+					<a href="#" class="del_favor">Добавить в избранное</a>
+				</div>
+				<div class="timetable__list">
+					<div class="timetable__list-line--upservice">
+						<h2>12:15 - 14:35</h2>
+						<h3>Физическая культура</h3>
+						<div class="timetable__list-line--buts">
+							<i class="audbl"><a href="#"></a></i>
+							<i class="add"><a href="#"></a></i>
+							<i class="write"><a href="#"></a></i>
+							<i class="comm"><a href="#"></a></i>
+						</div>
+					</div>					
+				</div>				
+			</article>
+			<div class="block__infolinks">
+				<span>					
+					<a href="#" class="green-webinar">Вернуться к расписанию</a>					
+				</span>
+			</div>
+		</div>		
+	</section>
+
+
+	
+
+	<section class="application">
+		<div class="container">
+			<div class="application__but">
+				<a href="#nowhere">
+				  <img alt="Get it on Google Play" src="/img/google_play.png" />
+				</a>
+				<a href="#nowhere">
+					<img src="/img/app_store.png" alt="">
+				</a>
+				<a href="#nowhere">
+					<img src="/img/win_store.png" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="block__infolinks">
+				<span>
+					<p>Справочная информация:</p>
+					<a href="#" class="green-webinar">Росвуз</a>
+					<a href="#" class="green-webinar">Для студентов</a>
+					<a href="#" class="green-webinar">Для преподавателей</a>
+					<a href="#" class="green-webinar">Для вузов</a>
+				</span>
+			</div>
+			<div class="footer__soc">				
+				<i class="fb"><a href="#"></a></i>
+				<i class="tw"><a href="#"></a></i>
+				<i class="like"><a href="#"></a></i>
+				<i class="cloud"><a href="#"></a></i>		
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

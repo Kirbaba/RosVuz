@@ -840,6 +840,12 @@ a {
 			background-position: 0 50%;
 			padding-left: 25px;
 		}
+		.del_favor {
+			float: right;
+			color: #f00;
+			font-family: "Arial";
+			font-size: 11px;
+		}
 		&__upservice {
 			font-size: 11px;
 			color: #F00;
@@ -861,7 +867,7 @@ a {
 				@extend .timetable__list-line--comm;				
 				h3 {
 					line-height: 25px;
-					margin: 15px 0 0 0!important;
+					margin: 15px 0 0 15px!important;
 					span {
 						line-height: normal;
 						font-size: 12px;
